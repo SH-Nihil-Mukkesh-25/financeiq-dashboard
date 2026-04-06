@@ -6,7 +6,6 @@ import { ExpenseChart } from '../components/dashboard/ExpenseChart';
 import { summaryData } from '../data/mockData';
 import { useAppState } from '../context/AppContext';
 import { Skeleton } from '../components/common/Skeleton';
-import { motion } from 'framer-motion';
 
 const Dashboard = () => {
   const { isLoading } = useAppState();
@@ -21,12 +20,7 @@ const Dashboard = () => {
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }}
-      className="space-y-6"
-    >
+    <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">Dashboard</h1>
@@ -93,7 +87,7 @@ const Dashboard = () => {
           </div>
         </>
       )}
-    </motion.div>
+    </div>
   );
 };
 

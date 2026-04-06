@@ -3,7 +3,6 @@ import { Search, Filter, ArrowUpDown, Edit2, Trash2, PlusCircle, CheckCircle2, D
 import { useAppState, useAppDispatch, ActionTypes } from '../context/AppContext';
 import { TransactionModal } from '../components/transactions/TransactionModal';
 import { Skeleton } from '../components/common/Skeleton';
-import { motion } from 'framer-motion';
 
 const Transactions = () => {
   const { transactions, filters, role, isLoading } = useAppState();
@@ -131,10 +130,7 @@ const Transactions = () => {
   }
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-      className="space-y-6 relative"
-    >
+    <div className="space-y-6 relative">
       {toast && (
         <div className="fixed bottom-6 right-6 z-50 bg-green-50 dark:bg-green-500/10 border border-green-200 dark:border-green-500/30 text-green-600 dark:text-green-500 px-4 py-3 rounded-xl shadow-lg backdrop-blur-sm flex items-center gap-3 animate-fade-in-up">
            <CheckCircle2 className="w-5 h-5" />
@@ -287,7 +283,7 @@ const Transactions = () => {
            </div>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
