@@ -152,11 +152,11 @@ State changes to `transactions` and `darkMode` are automatically synced to `loca
 
 | Dashboard (Dark) | Dashboard (Light) |
 | :-: | :-: |
-| ![Dashboard Dark](#) | ![Dashboard Light](#) |
+| ![Dashboard Dark](./src/assets/dashboard-dark.jpg) | ![Dashboard Light](./src/assets/dashboard-light.jpg) |
 
 | Transactions | Insights |
 | :-: | :-: |
-| ![Transactions](#) | ![Insights](#) |
+| ![Transactions](./src/assets/transactions.jpg) | ![Insights](./src/assets/insights.jpg) |
 
 ---
 
