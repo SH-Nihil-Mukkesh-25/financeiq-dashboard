@@ -2,7 +2,7 @@
 
 A modern, responsive personal finance dashboard built with React. Track transactions, visualize spending patterns, and gain automated insights — all from a clean, role-aware interface with full dark mode support.
 
-> **Live Demo:** [Coming Soon](#) <!-- Replace with deployed URL -->
+> **Live Demo:** [financeiq-dashboard-theta.vercel.app](https://financeiq-dashboard-theta.vercel.app/)
 
 ---
 
